@@ -54,6 +54,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'dotenv-rails'
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
@@ -70,3 +71,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "tailwindcss-ruby", "~> 4.1"
+
+gem "tailwindcss-rails", "~> 4.2"
