@@ -103,6 +103,8 @@ GEM
       railties (>= 6.1)
     drb (2.2.1)
     erubi (1.13.1)
+    friendly_id (5.5.1)
+      activerecord (>= 4.0.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.7)
@@ -284,6 +286,7 @@ DEPENDENCIES
   capybara
   debug
   dotenv-rails
+  friendly_id (~> 5.5.1)
   importmap-rails
   jbuilder
   pg (~> 1.1)
