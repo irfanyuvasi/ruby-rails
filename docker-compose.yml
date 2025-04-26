@@ -1,0 +1,26 @@
+name: db
+services:
+  database:
+    image: postgis/postgis:latest
+    restart: always
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data/database:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: "cizrom_dev"
+      POSTGRES_PASSWORD: "cizrom_dev"
+      POSTGRES_DB: "cizrom_dev"
+  cache:
+    image: redis:latest
+    restart: always
+    ports:
+      - '6379:6379'
+    command: redis-server --save 20 1 --loglevel warning --requirepass 1234
+    volumes: 
+      - cache:/data
+volumes:
+  database:
+    driver: local
+  cache:
+    driver: local

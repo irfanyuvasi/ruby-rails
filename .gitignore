@@ -6,6 +6,12 @@
 
 # Ignore bundler config.
 /.bundle
+/data
+
+.env.development
+.env.test
+.env.production
+.env
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -32,3 +38,4 @@
 
 /app/assets/builds/*
 !/app/assets/builds/.keep
+
